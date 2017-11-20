@@ -1,0 +1,44 @@
+.product-list
+    background: #fff
+#PullUp,#PullDown
+    height: .98rem
+    line-height: .98rem
+    background: url(/assets/images/floorimageload.gif) no-repeat center center
+    background-size: .4rem .4rem
+    display: none
+.product-list-item
+    display: flex
+    padding: .2rem .3rem
+    dt img
+        width: 1.6rem
+        height: 1.6rem
+        display: block
+    dd
+        flex: 1
+        padding: .15rem 0 .2rem .2rem
+    .product-name
+        display: -webkit-box
+        -webkit-line-clamp: 2
+        -webkit-box-orient: vertical
+        overflow: hidden
+        padding-right: .3rem
+        line-height: 1.4
+        color: #333
+        font-size: .26rem
+.product-trade
+    position: relative
+    margin-top: .3rem
+    color: #999
+    .SellNum
+        position: absolute
+        font-size: .24rem
+        right: .3rem
+        top: 0
+    .productPrice,.marketPrice
+        display: inline-block
+    .productPrice
+        font-size: .34rem
+        color: #d7000f
+        margin-right: .1rem
+    .marketPrice
+        text-decoration: line-through

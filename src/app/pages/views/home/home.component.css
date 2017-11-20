@@ -1,0 +1,205 @@
+/*导航菜单  */
+.channels{
+  width: 100%;
+  height: 1.84rem;
+  background: #fff;
+}
+.channels li{
+  width: 25%;
+  padding-top: .34rem;
+  float: left;
+}
+.channels img{
+  width: .8rem;
+  height: .8rem;
+  display: block;
+  margin: 0 auto;
+}
+.channels p{
+  font-size: .26rem;
+  color: #333;
+  margin-top: .16rem;
+  text-align: center;
+}
+.cates{
+  background: #fff;
+  overflow: hidden;
+}
+
+/*三级模板  */
+.cates .three li{
+  position: relative;
+  width: 3.9rem;
+  height: 2.3rem;
+  float: left;
+  margin-left: .04rem;
+}
+.cates .three .first{
+  width: 3.56rem;
+  height: 4.64rem;
+  float: left;
+  margin-left: 0;
+}
+
+/*四级模板  */
+.cates .four{
+  margin-top: -.2rem;
+  padding: 0 0 .2rem .2rem;
+  overflow: hidden;
+}
+.cates .four li{
+  width: 47%;
+  height: 1.6rem;
+  position: relative;
+  float: left;
+  margin-right: .2rem;
+  margin-top: .2rem;
+}
+.cates .four li .graphic-text{
+  padding-left: .16rem;
+}
+
+.cates li .graphic-text{
+  padding-left: .4rem;
+  padding-top: .3rem;
+  position: absolute;
+  z-index: 2;
+}
+.cates li .graphic-text .mainTitle{
+  font-size: .3rem;
+  color: #333;
+}
+.cates li .graphic-text .subtitle{
+  font-size: .26rem;
+  color: #666;
+  margin: .12rem 0 .14rem;
+}
+.cates li .graphic-img{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.cates li .graphic-img img{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.cates li:last-child{
+  margin-top: .04rem;
+}
+
+/*楼层  */
+.floors{
+  background: #fff;
+}
+.floors .advImage img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.floors .floor-list{
+  padding: .3rem .1rem .4rem;
+  white-space: nowrap;
+  overflow: hidden;
+  overflow-x: scroll;
+}
+.floors .floor-list dl{
+  margin-left: .2rem;
+  display: inline-block;
+}
+.floors .floor-list dt img{
+  width: 2.6rem;
+  height: 2.6rem;
+  display: block;
+}
+.floors .floor-list dd p{
+  text-align: center;
+}
+.floors .floor-list .product-name{
+  font-size: .26rem;
+  color: #333;
+  margin-bottom: .2rem;
+}
+.floors .floor-list .product-price{
+  color: #ff1150;
+  font-size: .3rem;
+}
+.floors .floor-list .product-price em{
+  font-size: .24rem;
+}
+.floors .floor-list .more{
+  width:2.6rem;
+  height:3.6rem;
+  display: inline-block;
+  margin-right:.2rem;
+  vertical-align: top;
+}
+.floors .floor-list .more h2{
+  width: 1.17rem;
+  height: .48rem;
+  line-height: .48rem;
+  text-align: center;
+  font-size: .26rem;
+  color: #666;
+  margin: 1.2rem auto 0;
+}
+.floors .floor-list .more p{
+  font-size: .24rem;
+  color: #ff1150;
+  text-align: center;
+}
+/*更多精选  */
+.products{
+  background: #fff;
+  padding: 0 .3rem;
+  overflow: hidden;
+}
+.product-list dl{
+  width: 3.3rem;
+  padding-top: .2rem;
+  padding-bottom: .3rem;
+  float: left;
+  overflow: hidden;
+}
+.product-list dl:nth-child(even){
+  float: right;
+}
+.product-list dt img{
+  width: 3.3rem;
+  height: 3.3rem;
+  display: block;
+}
+.product-list dd{
+  padding-left: .1rem;
+}
+.product-list .product-name{
+  font-size: .26rem;
+  color: #333;
+  line-height: .36rem;
+  min-height: .72rem;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  word-break: break-all;
+  margin-top: .25rem;
+}
+.product-list .product-price{
+  font-size: .3rem;
+  color: #ff1150;
+  margin-top: .3rem;
+}
+.product-list .product-price em{
+  font-size: .24rem;
+}
+/*没有更多  */
+.noMore{
+  height: .88rem;
+  line-height: .88rem;
+  text-align: center;
+  background: #f6f6f6;
+  font-size: .24rem;
+  color: #999;
+}

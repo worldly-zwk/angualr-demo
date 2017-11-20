@@ -1,0 +1,25 @@
+<div class="template">
+    <header class="header retainbb">
+        <div class="search">搜索商品，了解更多</div>
+    </header>
+    <main class="main" *ngIf="classifyList">
+        <nav class="nav-list">
+            <ul>
+                <li *ngFor="let item of classifyList;let i=index;" (click)="tabClick($event,item.name)" [class.active]="i==0">{{item.name}}</li>
+            </ul>
+        </nav>
+        <div class="content-list">
+            <div class="classIfy-menu-group" *ngFor="let menu of (classifyList | listFilter:classifyFilter)">
+                <div class="home-title">
+                    <span></span>
+                    <p>{{menu.name}}</p>
+                    <span></span>
+                </div>
+                <dl class="classIfy-menu-item" *ngFor="let item of menu.childs">
+                    <dt><img [src]="item.image" alt=""></dt>
+                    <dd>{{item.name}}</dd>
+                </dl>
+            </div>
+        </div>
+    </main>
+</div>

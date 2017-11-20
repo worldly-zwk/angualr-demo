@@ -1,0 +1,87 @@
+<div class="template">
+    <header class="header">
+        <div class="search" routerLink="/search">搜索商品，了解更多</div>
+        <div class="news">
+            <span class="news-num" routerLink="/news">2</span>
+        </div>
+    </header>
+    <main class="main">
+        <div class="swiper-container bander" [style.height.rem]='4' *ngIf="bander" swiper [config]="config">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" *ngFor="let item of bander"><img [src]="item.src" alt=""></div> 
+            </div>
+            <div class="swiper-pagination swiper-pagination1" style="bottom: .2rem;width:100%;"></div>
+        </div>
+        <nav class="channels" *ngIf="channels">
+            <ul>
+                <li *ngFor="let item of channels" [routerLink]="item.src">
+                    <img [src]="item.image" alt="">
+                    <p>{{item.title}}</p>
+                </li>
+            </ul>
+        </nav>
+        <div class="cates mt2" *ngIf="cate">
+            <div class="home-title" *ngIf="cate.isShowTitle">
+                <span></span>
+                <p>{{cate.title}}</p>
+                <span></span>
+            </div>
+            <div class="floor">
+                <ul [class.three]="!cate.templateType" [class.four]="cate.templateType">
+                    <li *ngFor="let item of cate.list;let i=index;" [class.first]="i==0">
+                        <div class="graphic-text">
+                            <h2 class="mainTitle" *ngIf="item.title" [style.color]="item.title">{{item.title}}</h2>
+                            <p class="subtitle" *ngIf="item.viceTitle" [style.color]="item.viceTitleColor">{{item.viceTitle}}</p>
+                        </div>
+                        <div class="graphic-img">
+                            <img [src]="item.src" alt="">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="floors" *ngIf="floor">
+            <div class="floor-container mt2" *ngFor="let item of floor">
+                <div class="home-title">
+                    <span></span>
+                    <p>{{item.name}}</p>
+                    <span></span>
+                </div>
+                <div class="advImage" routerLink="/list/2">
+                    <img [src]="item.advImage" alt="">
+                </div>
+                <div class="floor-list">
+                    <dl *ngFor="let list of item.list" routerLink="/product/12">
+                        <dt><img [src]="list.image" alt=""></dt>
+                        <dd>
+                            <p class="product-name">{{list.title}}</p>
+                            <p class="product-price"><em>￥</em>{{list.staffPrice}}</p>
+                        </dd>
+                    </dl>
+                    <dl class="more retainb">
+                        <h2 class="retainbb">查看更多</h2>
+                        <p>see more</p>
+                    </dl>
+                </div>
+            </div>
+        </div>
+        <div class="products mt2" *ngIf="products">
+            <div class="home-title retainbb">
+                <span></span>
+                <p>{{products.name}}</p>
+                <span></span>
+            </div>
+            <div class="product-list">
+                <dl *ngFor="let list of products.list" routerLink="/product/12">
+                    <dt><img [src]="list.image" alt=""></dt>
+                    <dd>
+                        <p class="product-name">{{list.title}}</p>
+                        <p class="product-price"><em>￥</em>{{list.staffPrice}}</p>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="noMore">没有更多了~</div>
+    </main>
+</div>
+

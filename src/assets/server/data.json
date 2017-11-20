@@ -1,0 +1,19 @@
+{
+  "bander": [
+    {
+      "src": "http://localhost:3000/bander/1.jpg"
+    },
+    {
+      "src": "http://localhost:3000/bander/2.jpg"
+    },
+    {
+      "src": "http://localhost:3000/bander/3.jpg"
+    },
+    {
+      "src": "http://localhost:3000/bander/4.jpg"
+    },
+    {
+      "src": "http://localhost:3000/bander/5.jpg"
+    }
+  ]
+}

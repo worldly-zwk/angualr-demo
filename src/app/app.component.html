@@ -1,0 +1,23 @@
+<div class="wrapper">
+    <router-outlet #child></router-outlet>
+</div>
+<footer class="footer retainbt" [style.display]="flay?'block':'none'">
+    <ul>
+        <li [routerLink]="['/home']" routerLinkActive="active">
+            <img src="" alt="">
+            <span>首页</span>
+        </li>
+        <li [routerLink]="['classify']" routerLinkActive="active">
+            <img src="" alt="">
+            <span>分类</span>
+        </li>
+        <li routerLink="/cart" routerLinkActive="active">
+            <img src="" alt="">
+            <span>购物车</span>
+        </li>
+        <li routerLink="/user" routerLinkActive="active">
+            <img src="" alt="">
+            <span>我的</span>
+        </li>
+    </ul>
+</footer>

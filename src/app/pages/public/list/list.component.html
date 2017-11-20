@@ -1,0 +1,15 @@
+<div class="product-list mt2 retainbt" id="Content">
+    <div id="PullDown"></div>
+    <dl class="product-list-item retainbb" *ngFor="let item of data">
+        <dt><img [src]="item.image" alt=""></dt>
+        <dd>
+            <p class="product-name">{{item.name}}</p>
+            <div class="product-trade">
+                <p class="productPrice">￥{{item.productPrice}}</p>
+                <p class="marketPrice">￥{{item.marketPrice}}</p>
+                <p class="SellNum">已售{{item.SellNum}}件</p>
+            </div>
+        </dd>
+    </dl>
+    <div id="PullUp"></div>
+</div>

@@ -1,0 +1,35 @@
+.main
+    display: flex
+    background: #fff
+    overflow: hidden
+.nav-list
+    width: 1.8rem
+    height: 100%
+    overflow-y: scroll
+    li
+        height: 1rem
+        text-align: center
+        line-height: 1rem
+        background: #f6f6f6
+        border-bottom: 1px solid #fff
+        &.active
+            background: #fff
+            border-left: .05rem solid #d7000f
+.content-list
+    flex: 1
+    padding: .3rem
+    overflow-y: scroll
+    .classIfy-menu-group
+        overflow: hidden
+        margin-top: .2rem
+        .classIfy-menu-item
+            float: left
+            width: 1.7rem
+            dt img
+                width: .9rem
+                height: .9rem
+                display: block
+                margin: 0 auto
+            dd
+                text-align: center
+                line-height: .4rem

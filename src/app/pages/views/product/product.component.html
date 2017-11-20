@@ -1,0 +1,79 @@
+<div class="template">
+    <app-title title="商品详情"></app-title>
+    <main class="main">
+        <div class="swiper-container picture" [style.height.rem]='7.5' *ngIf="picture" swiper [config]="config">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" *ngFor="let item of picture"><img [src]="item.src" alt=""></div> 
+            </div>
+            <div class="swiper-pagination swiper-pagination1" style="bottom: .2rem;width:100%;"></div>
+        </div>
+        <div class="explain retainbb">
+            <p class="explain-name">正大食品（CP）酱味炭烤腿肉串 280g /4 串/袋 *2袋</p>
+            <p class="explain-title">经典日式熟食 三同产品</p>
+            <div class="explain-trade">
+                <p class="productPrice">￥120.00</p>
+                <p class="marketPrice">￥168.00</p>
+                <p class="SellNum">已售0件</p>
+            </div>
+            <div class="explain-option retainbt">
+                <span></span>
+                不支持七天无理由退货
+            </div>
+        </div>
+        <div class="spec mt2 retainbt retainbb">
+            <p class="prompt">已选</p>
+        </div>
+        <div class="address-option mt2 retainbt retainbb">
+            <div class="address">
+                <p class="msg" style="color:#999;">送至</p>
+                <span class="icon"></span>
+                <p class="province">请选择</p>
+                <p class="city"></p>
+                <p class="area"></p>
+                <p class="village"></p>
+                <p class="street"></p>
+            </div>
+            <div class="describe" style="color:#999;">付款成功后，预计<i style="color: #d7000f;">48小时</i>内发货</div>
+        </div>
+        <div class="spec mt2 retainbt retainbb">
+            <p class="prompt">商品咨询(0)</p>
+        </div>
+        <div class="shop mt2">
+            <h2 class="shop-name">精丽生活馆</h2>
+            <ul class="shop-score">
+                <li class="score-goods retainbr">
+                    <p class="number">5</p>
+                    <p class="text">商品评分</p>
+                </li>
+                <li class="score-service retainbr">
+                    <p class="number">5</p>
+                    <p class="text">服务态度</p>
+                </li>
+                <li class="score-logistics retainbr">
+                    <p class="number">5</p>
+                    <p class="text">物流速度</p>
+                </li>
+                <li class="score-follow">
+                    <p class="number">-</p>
+                    <p class="text">关注</p>
+                </li>
+            </ul>
+            <div class="shop-btns">
+                <a class="book-mark retainb">收藏店铺</a>
+                <a class="enter-shop retainb">进入店铺</a>
+            </div>
+        </div>
+        <div class="graphic-details mt2">
+            <h2 class="retainbb">图文详情</h2>
+            <div class="graphic-details-img mt2">
+                <img src="http://oss.citic-mall.com/2c6cab6c-bf29-494c-ba29-fd0096778c70" alt="">
+            </div>
+        </div>
+    </main>
+    <footer class="product-footer">
+        <p class="collection-commodity"></p>
+        <p class="cart"><i>0</i></p>
+        <p class="purchase">立即购买</p>
+        <p class="addCart">加入购物车</p>
+    </footer>
+</div>
